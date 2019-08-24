@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'static#index'
+  root to: 'static#index2'
   get '/index.html' => 'static#index'
   get '/index2.html' => 'static#index2'
   get '/index3.html' => 'static#index3'
