@@ -1534,6 +1534,9 @@ ul.msg_list li a .message {
 .navbar-nav .open .dropdown-menu.msg_list {
     width: 300px
 }
+.navbar-nav .open .dropdown-menu.hotel_list {
+    width: 1000px
+}
 .info-number .badge {
     font-size: 10px;
     font-weight: normal;
@@ -1597,6 +1600,22 @@ ul.quick-list li {
     overflow: hidden
 }
 ul.quick-list li i {
+    padding-right: 10px;
+    color: #757679
+}
+ul.hotel-list {
+    padding-left: 0;
+    display: inline-block
+}
+ul.hotel-list li {
+    padding-left: 10px;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 4px;
+    white-space: nowrap;
+}
+ul.hotel-list li i {
     padding-right: 10px;
     color: #757679
 }
@@ -2789,6 +2808,17 @@ ul.widget_tally .count {
 .widget_tally_box .flex {
     display: -ms-flexbox;
     display: flex
+}
+.hotel-box-flex {
+  display: flex; 
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+  height: 450px;
+}
+.hotel-items {
+  width:25%;
+  padding: 5px;
 }
 ul.widget_profile_box {
     width: 100%;
