@@ -1,0 +1,88 @@
+<div class="col-md-12 col-xs-12">
+  <div class="x_panel">
+    <div class="x_title">
+      <h2>Price Editor</h2>
+      <ul class="nav navbar-right panel_toolbox">
+        <li><a><i class="fa fa-arrow-left"></i></a></li>
+        <li><a><i class="fa fa-arrow-right"></i></a></li>
+        <li><a><i class="fa fa-wrench"></i></a></li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+      <div class="table-responsive">
+        <table class="table table-striped jambo_table bulk_action">
+          <thead>
+            <tr class="headings">
+              <th class="column-title">Date </th>
+              <% (Date.today..(Date.today + 29.days)).each do |date| %>
+                <th class="column-title"><%= date.strftime('%d/%m %a') %></th>
+              <% end %>
+            </tr>
+          </thead>
+    
+          <tbody>
+            <tr>
+              <td width="100px"><strong>Available</strong></td>
+              <% 30.times do |value| %>
+                <td>
+                  <div class="text-center">
+                    <strong><%= rand(20) %></strong>
+                  </div>
+                </td>
+              <% end %>
+            </tr>
+    
+            <tr>
+              <td></td>
+              <% 30.times do %>
+                <td>
+                  <div class="text-center">
+                    <button class="">+</button>
+                  </div>
+                </td>
+              <% end %>
+            </tr>
+            <tr>
+              <td><strong>Base Price</strong></td>
+              <% 30.times do %>
+                <td>
+                  <div class="text-center">
+                    <input type="number" name="some_name" value="" id="some_name" style="width: 70px;">
+                  </div>
+                </td>
+              <% end %>
+            </tr>
+    
+            <tr>
+              <td></td>
+              <% 30.times do %>
+                <td>
+                  <div class="text-center">
+                    <button class="">-</button>
+                  </div>
+                </td>
+              <% end %>
+            </tr>
+    
+            <tr>
+              <td><strong>Rate on CM</strong></td>
+              <% 30.times do %>
+                <td>
+                  <div class="text-center">
+                    <strong><%= rand(5000..5500) %></strong>
+                  </div>
+                </td>
+              <% end %>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        <div class="form-group">
+          <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-6">
+            <button type="submit" class="btn btn-success"><i class="fa fa-refresh"></i> Sync</button>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get '/tables.html' => 'static#tables'
   get '/tables_dynamic.html' => 'static#tables_dynamic'
   get '/edit_rates.html' => 'static#edit_rates'
+  get '/room_setting.html' => 'static#room_setting'
+  get '/price_editor.html' => 'static#price_editor'
   get '/general_elements.html' => 'static#general_elements'
   get '/media_gallery.html' => 'static#media_gallery'
   get '/typography.html' => 'static#typography'
